@@ -1102,7 +1102,7 @@ ul, ol {
 }
 
 .code-block {
-  background: var(--deep-navy); border-radius: 16px;
+  background: #052b42; border-radius: 16px;
   margin: 16px 0 24px; overflow: hidden;
 }
 .code-block-header {
