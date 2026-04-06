@@ -155,6 +155,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ===== Theme Toggle =====
+  const themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    // Check saved preference or system preference
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+
+    themeToggle.addEventListener('click', function () {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  }
+
   // ===== Mobile Nav Toggle =====
   const toggle = document.querySelector('.nav-mobile-toggle');
   const links = document.querySelector('.nav-links');
