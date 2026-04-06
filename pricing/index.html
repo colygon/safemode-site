@@ -31,7 +31,7 @@
           <a href="/pricing/">Pricing</a>
           <a href="/docs/">Docs</a>
           <a href="/blog/">Blog</a>
-          <a href="#" class="nav-cta">Join Beta</a>
+          <a href="#" class="nav-cta" data-auth-trigger="nav">Join Beta</a>
         </div>
         <button class="nav-mobile-toggle" aria-label="Toggle menu">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -92,7 +92,7 @@
                 Built-in secrets
               </li>
             </ul>
-            <a href="#" class="pricing-btn">Join waitlist</a>
+            <a href="#" class="pricing-btn" data-auth-trigger="pricing">Join waitlist</a>
           </div>
 
           <!-- Extended (Popular) -->
@@ -134,7 +134,7 @@
                 Team collaboration
               </li>
             </ul>
-            <a href="#" class="pricing-btn">Join waitlist</a>
+            <a href="#" class="pricing-btn" data-auth-trigger="pricing">Join waitlist</a>
           </div>
 
           <!-- Always-On -->
@@ -175,7 +175,7 @@
                 Dedicated infrastructure
               </li>
             </ul>
-            <a href="#" class="pricing-btn">Join waitlist</a>
+            <a href="#" class="pricing-btn" data-auth-trigger="pricing">Join waitlist</a>
           </div>
         </div>
       </div>
@@ -252,7 +252,7 @@
       <div class="container reveal">
         <h2>Ready to deploy your agent?</h2>
         <p>Join the beta and get your first agent running in under 5 minutes.</p>
-        <a href="#" class="hero-cta">
+        <a href="#" class="hero-cta" data-auth-trigger="hero">
           Join Beta
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
@@ -323,6 +323,25 @@
     </div>
   </footer>
 
+  <!-- Auth Modal -->
+  <div class="auth-modal" id="auth-modal">
+    <div class="auth-modal-box">
+      <button class="auth-modal-close" id="auth-modal-close" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2>Join the SafeMode Beta</h2>
+      <p class="auth-subtitle">Enter your email and we'll send you a magic link to sign in. No password needed.</p>
+      <form class="auth-form" id="auth-form">
+        <label for="auth-email">Email address</label>
+        <input type="email" id="auth-email" placeholder="you@example.com" required autocomplete="email">
+        <button type="submit" class="auth-submit" id="auth-btn">Send Magic Link</button>
+      </form>
+      <div class="auth-msg" id="auth-msg"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/js/auth.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>

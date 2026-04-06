@@ -205,6 +205,25 @@
     </div>
   </div>
 
+  <!-- Auth Modal -->
+  <div class="auth-modal" id="auth-modal">
+    <div class="auth-modal-box">
+      <button class="auth-modal-close" id="auth-modal-close" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2>Join the SafeMode Beta</h2>
+      <p class="auth-subtitle">Enter your email and we'll send you a magic link to sign in. No password needed.</p>
+      <form class="auth-form" id="auth-form">
+        <label for="auth-email">Email address</label>
+        <input type="email" id="auth-email" placeholder="you@example.com" required autocomplete="email">
+        <button type="submit" class="auth-submit" id="auth-btn">Send Magic Link</button>
+      </form>
+      <div class="auth-msg" id="auth-msg"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/js/auth.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>
