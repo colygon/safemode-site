@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docs — Quickstart | SafeMode</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="description" content="Get your first AI agent deployed in under 5 minutes.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300d4ff'/><path d='M16 3L9 7V13M16 3L23 7V13M16 7V13M9 13L23 19M23 13L9 19M9 19V25L16 29M23 19V25L16 29M16 19V25' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+</head>
+<body>
+
+  <!-- Docs Navigation -->
+  <header class="nav">
+    <div class="container">
+      <nav class="nav-inner">
+        <div style="display:flex;align-items:center;gap:1.5rem;">
+          <a href="/" class="nav-logo">
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="6" fill="#00d4ff"/>
+              <path d="M16 3L9 7V13M16 3L23 7V13M16 7V13M9 13L23 19M23 13L9 19M9 19V25L16 29M23 19V25L16 29M16 19V25" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <span style="font-size:0.8125rem;color:rgba(255,255,255,0.3);">Documentation</span>
+          <button class="docs-sidebar-toggle nav-mobile-toggle" aria-label="Toggle sidebar" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+        <a href="#" style="font-size:0.8125rem;color:rgba(255,255,255,0.3);transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+    <!-- Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="docs-sidebar-section">
+        <h4>Getting Started</h4>
+        <a href="/docs/" class="active">Quickstart</a>
+        <a href="/docs/#configuration">Configuration</a>
+      </div>
+      <div class="docs-sidebar-section">
+        <h4>Reference</h4>
+        <a href="/docs/#cli">CLI Reference</a>
+        <a href="/docs/#api">API Reference</a>
+        <a href="/docs/#provisioning">Provisioning API</a>
+      </div>
+      <div class="docs-sidebar-section">
+        <h4>Framework Guides</h4>
+        <a href="/docs/#crewai">CrewAI</a>
+        <a href="/docs/#langgraph">LangGraph</a>
+        <a href="/docs/#openclaw">OpenClaw</a>
+        <a href="/docs/#nemoclaw">NemoClaw</a>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <div class="docs-content">
+      <h1>Quickstart</h1>
+      <p class="subtitle">Get your first AI agent deployed in under 5 minutes.</p>
+
+      <!-- Step 1 -->
+      <h2 id="install">1. Install the CLI</h2>
+      <p>Install the SafeMode CLI globally using npm:</p>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Terminal</span>
+          <button class="code-block-copy">Copy</button>
+        </div>
+        <pre>npm install -g @safemode/cli</pre>
+      </div>
+
+      <!-- Step 2 -->
+      <h2 id="authenticate">2. Authenticate</h2>
+      <p>Log in with your GitHub account:</p>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Terminal</span>
+          <button class="code-block-copy">Copy</button>
+        </div>
+        <pre>safemode login</pre>
+      </div>
+
+      <!-- Step 3 -->
+      <h2 id="configure">3. Create a configuration</h2>
+      <p>Create a <code>safemode.toml</code> in your project root:</p>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>safemode.toml</span>
+          <button class="code-block-copy">Copy</button>
+        </div>
+        <pre><span class="comment"># Agent configuration</span>
+[<span class="keyword">agent</span>]
+<span class="function">name</span> = <span class="string">"my-agent"</span>
+<span class="function">framework</span> = <span class="string">"crewai"</span>
+<span class="function">tier</span> = <span class="string">"smart"</span>
+
+[<span class="keyword">triggers</span>]
+<span class="function">cron</span> = <span class="string">"*/5 * * * *"</span>
+<span class="function">webhook</span> = <span class="number">true</span></pre>
+      </div>
+
+      <!-- Step 4 -->
+      <h2 id="deploy">4. Deploy</h2>
+      <p>Deploy your agent with a single command:</p>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Terminal</span>
+          <button class="code-block-copy">Copy</button>
+        </div>
+        <pre>safemode deploy
+
+<span class="comment"># Deploying my-agent (CrewAI)...</span>
+<span class="string">&#10003; Agent deployed at safemode.sh/my-agent</span>
+<span class="comment">#   Tier: Smart ($1/mo) | Status: sleeping</span></pre>
+      </div>
+
+      <!-- Step 5 -->
+      <h2 id="monitor">5. Monitor</h2>
+      <p>View real-time logs from your agent:</p>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Terminal</span>
+          <button class="code-block-copy">Copy</button>
+        </div>
+        <pre>safemode logs my-agent --follow</pre>
+      </div>
+
+      <!-- Info card -->
+      <div class="info-card">
+        <h3>What happens next?</h3>
+        <p>Your agent is now deployed and sleeping. It will wake automatically when triggered by a webhook, cron schedule, or API call. While sleeping, your agent costs nothing beyond the flat monthly fee. When it wakes, it picks up exactly where it left off — no cold starts, no lost state.</p>
+      </div>
+
+      <!-- Configuration section -->
+      <h2 id="configuration" style="margin-top:4rem;">Configuration Reference</h2>
+      <p>The <code>safemode.toml</code> file supports the following options:</p>
+
+      <h3 style="font-size:1rem;margin-top:1.5rem;">[agent]</h3>
+      <div class="code-block">
+        <pre><span class="function">name</span>       <span class="comment"># Agent name (used in URLs)</span>
+<span class="function">framework</span>  <span class="comment"># crewai | langgraph | openclaw | custom</span>
+<span class="function">tier</span>       <span class="comment"># smart | extended | always-on</span>
+<span class="function">entrypoint</span> <span class="comment"># Path to main file (default: main.py)</span></pre>
+      </div>
+
+      <h3 style="font-size:1rem;margin-top:1.5rem;">[triggers]</h3>
+      <div class="code-block">
+        <pre><span class="function">cron</span>       <span class="comment"># Cron expression for scheduled runs</span>
+<span class="function">webhook</span>    <span class="comment"># Enable webhook trigger (true/false)</span>
+<span class="function">api</span>        <span class="comment"># Enable API invocation (true/false)</span></pre>
+      </div>
+
+      <h3 style="font-size:1rem;margin-top:1.5rem;">[build]</h3>
+      <div class="code-block">
+        <pre><span class="function">python</span>     <span class="comment"># Python version (default: "3.11")</span>
+<span class="function">install</span>    <span class="comment"># Install command (default: "pip install -r requirements.txt")</span></pre>
+      </div>
+
+      <!-- CLI Reference -->
+      <h2 id="cli" style="margin-top:4rem;">CLI Reference</h2>
+      <p>Common commands for managing your agents:</p>
+      <div class="code-block">
+        <pre><span class="function">safemode login</span>        <span class="comment"># Authenticate with GitHub</span>
+<span class="function">safemode deploy</span>       <span class="comment"># Deploy current project</span>
+<span class="function">safemode logs</span> &lt;name&gt;  <span class="comment"># View agent logs</span>
+<span class="function">safemode status</span>       <span class="comment"># Check deployment status</span>
+<span class="function">safemode secrets set</span>  <span class="comment"># Add environment variables</span>
+<span class="function">safemode delete</span>       <span class="comment"># Remove an agent</span>
+<span class="function">safemode list</span>         <span class="comment"># List all deployed agents</span></pre>
+      </div>
+
+      <!-- API Reference -->
+      <h2 id="api" style="margin-top:4rem;">API Reference</h2>
+      <p>Every deployed agent gets a REST API at <code>https://safemode.sh/&lt;agent-name&gt;</code>:</p>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Endpoints</span>
+        </div>
+        <pre><span class="keyword">POST</span>  <span class="string">/invoke</span>      <span class="comment"># Trigger agent execution</span>
+<span class="keyword">GET</span>   <span class="string">/status</span>      <span class="comment"># Get agent status</span>
+<span class="keyword">GET</span>   <span class="string">/health</span>      <span class="comment"># Health check</span>
+<span class="keyword">GET</span>   <span class="string">/logs</span>        <span class="comment"># Retrieve recent logs</span>
+<span class="keyword">POST</span>  <span class="string">/secrets</span>     <span class="comment"># Update environment variables</span></pre>
+      </div>
+
+      <p>Example invocation:</p>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>cURL</span>
+          <button class="code-block-copy">Copy</button>
+        </div>
+        <pre>curl -X POST https://safemode.sh/my-agent/invoke \
+  -H <span class="string">"Authorization: Bearer $SAFEMODE_TOKEN"</span> \
+  -H <span class="string">"Content-Type: application/json"</span> \
+  -d <span class="string">'{"input": "Analyze Q4 sales data"}'</span></pre>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

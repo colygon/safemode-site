@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeMode | Deploy AI Agents for $1/month</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="description" content="Cloud hosting for AI agents. Sleep/wake architecture, instant API endpoints, and built-in secrets management. Starting at $1/month.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300d4ff'/><path d='M16 3L9 7V13M16 3L23 7V13M16 7V13M9 13L23 19M23 13L9 19M9 19V25L16 29M23 19V25L16 29M16 19V25' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="/" class="nav-logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="6" fill="#00d4ff"/>
+            <path d="M16 3L9 7V13M16 3L23 7V13M16 7V13M9 13L23 19M23 13L9 19M9 19V25L16 29M23 19V25L16 29M16 19V25" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>safemode</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/docs/">Docs</a>
+          <a href="/blog/">Blog</a>
+          <a href="#" class="nav-cta">Join Beta</a>
+        </div>
+        <button class="nav-mobile-toggle" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-label">Now in private beta</span>
+        <h1>Cloud hosting for your <span class="text-accent">AI agents</span>.</h1>
+        <p class="hero-sub">Deploy any AI agent to the cloud in seconds. Sleep/wake architecture keeps costs at $1/month. No DevOps required.</p>
+        <a href="#" class="hero-cta">
+          Join Beta
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Logo Marquee ===== -->
+    <section class="marquee-section">
+      <p class="marquee-label">Works with your favorite tools</p>
+      <div class="marquee-track">
+        <div class="marquee-item">Python</div>
+        <div class="marquee-item">Docker</div>
+        <div class="marquee-item">LangChain</div>
+        <div class="marquee-item">CrewAI</div>
+        <div class="marquee-item">OpenAI</div>
+        <div class="marquee-item">AutoGen</div>
+        <div class="marquee-item">Anthropic</div>
+        <div class="marquee-item">Hugging Face</div>
+        <div class="marquee-item">FastAPI</div>
+        <div class="marquee-item">LangGraph</div>
+        <div class="marquee-item">Vercel</div>
+        <div class="marquee-item">Next.js</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-item">Python</div>
+        <div class="marquee-item">Docker</div>
+        <div class="marquee-item">LangChain</div>
+        <div class="marquee-item">CrewAI</div>
+        <div class="marquee-item">OpenAI</div>
+        <div class="marquee-item">AutoGen</div>
+        <div class="marquee-item">Anthropic</div>
+        <div class="marquee-item">Hugging Face</div>
+        <div class="marquee-item">FastAPI</div>
+        <div class="marquee-item">LangGraph</div>
+        <div class="marquee-item">Vercel</div>
+        <div class="marquee-item">Next.js</div>
+      </div>
+    </section>
+
+    <!-- ===== Features Grid ===== -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features-grid">
+          <!-- Featured card (spans 2 rows on desktop) -->
+          <div class="feature-card featured reveal">
+            <span class="feature-label">Platform</span>
+            <h2>Everything your agent needs to run.</h2>
+            <p>Your own container, public URL, secrets, metrics, and scaling — all in one place. No Dockerfile, no nginx, no YAML.</p>
+          </div>
+
+          <!-- Card 2: Flat pricing -->
+          <div class="feature-card reveal">
+            <h3>Flat $1/month</h3>
+            <p>No per-request fees, no surprise bills. Sleep/wake architecture means you only pay when active.</p>
+            <div class="feature-visual">
+              <div class="feature-visual-inner" style="text-align:center; padding:1.5rem;">
+                <div style="font-size:2.5rem; font-weight:700; letter-spacing:-0.03em;">$1</div>
+                <div style="font-size:0.75rem; color:rgba(255,255,255,0.25); margin-top:0.25rem;">/month per agent</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: API Endpoint -->
+          <div class="feature-card reveal">
+            <h3>Built-in API endpoint</h3>
+            <p>Every agent gets a stable HTTPS URL on deploy. Call it from your app, webhooks, or other agents.</p>
+            <div class="feature-visual">
+              <div class="feature-visual-inner">
+                <div class="endpoint-row">
+                  <span class="endpoint-method get">GET</span>
+                  <span class="endpoint-url">/api/agent/status</span>
+                </div>
+                <div class="endpoint-row">
+                  <span class="endpoint-method post">POST</span>
+                  <span class="endpoint-url">/api/agent/invoke</span>
+                </div>
+                <div class="endpoint-row">
+                  <span class="endpoint-method get">GET</span>
+                  <span class="endpoint-url">/api/agent/health</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Stack -->
+          <div class="feature-card reveal">
+            <h3>Bring your own stack</h3>
+            <p>CrewAI, LangGraph, OpenAI Agents, or your own framework. If it runs in a container, it runs on SafeMode.</p>
+            <div class="feature-visual">
+              <div class="feature-visual-inner">
+                <div class="stack-logos">
+                  <span class="stack-logo">CrewAI</span>
+                  <span class="stack-logo">LangGraph</span>
+                  <span class="stack-logo">OpenAI</span>
+                  <span class="stack-logo">Anthropic</span>
+                  <span class="stack-logo">AutoGen</span>
+                  <span class="stack-logo">Custom</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: One-click deploys -->
+          <div class="feature-card reveal">
+            <h3>One-click deploys</h3>
+            <p>Connect a GitHub repo and deploy. Your agent is live in seconds — no YAML, no manual wiring.</p>
+            <div class="feature-visual">
+              <div class="feature-visual-inner">
+                <div class="repo-row">
+                  <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  <span class="repo-name">sfm/support-agent</span>
+                </div>
+                <div class="repo-row">
+                  <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  <span class="repo-name">sfm/research-bot</span>
+                </div>
+                <div class="repo-row">
+                  <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  <span class="repo-name">sfm/data-pipeline</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Secrets -->
+          <div class="feature-card reveal">
+            <h3>Built-in secrets</h3>
+            <p>Store API keys and credentials securely. Injected at runtime, never exposed in logs.</p>
+            <div class="feature-visual">
+              <div class="feature-visual-inner">
+                <div class="secrets-list">
+                  <div class="secret-row">
+                    <span class="secret-key">OPENAI_API_KEY</span>
+                    <span class="secret-value">sk-••••••••••</span>
+                  </div>
+                  <div class="secret-row">
+                    <span class="secret-key">REDIS_URL</span>
+                    <span class="secret-value">redis://••••••</span>
+                  </div>
+                  <div class="secret-row">
+                    <span class="secret-key">DATABASE_URL</span>
+                    <span class="secret-value">postgres://••••</span>
+                  </div>
+                  <div class="secret-row">
+                    <span class="secret-key">ANTHROPIC_API_KEY</span>
+                    <span class="secret-value">sk-ant-••••••</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How It Works ===== -->
+    <section class="steps">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Production-ready in 3 steps.</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <span class="step-number">Step 1</span>
+            <h3>Push your code</h3>
+            <p>Connect your GitHub repo or push directly with the CLI.</p>
+            <div class="step-visual">
+              <span class="comment"># Deploy from CLI</span><br>
+              $ safemode deploy<br>
+              <span class="success">&#10003;</span> Agent deployed at safemode.sh/my-agent
+            </div>
+          </div>
+          <div class="step-card reveal">
+            <span class="step-number">Step 2</span>
+            <h3>Add secrets</h3>
+            <p>Configure environment variables and API keys in the dashboard.</p>
+            <div class="step-visual">
+              OPENAI_API_KEY=sk-•••<br>
+              REDIS_URL=redis://•••<br>
+              DATABASE_URL=postgres://•••
+            </div>
+          </div>
+          <div class="step-card reveal">
+            <span class="step-number">Step 3</span>
+            <h3>You're live</h3>
+            <p>Your agent gets a public HTTPS endpoint. Invoke it via API, webhook, or cron.</p>
+            <div class="step-visual">
+              <span class="comment"># Invoke your agent</span><br>
+              $ curl https://safemode.sh/my-agent/invoke<br>
+              <span class="success">{"status": "ok", "result": "..."}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Problems Section ===== -->
+    <section class="problems">
+      <div class="container">
+        <div class="problems-heading reveal">
+          <h2>Building an AI agent locally is easy. Deploying it to the cloud is hard.</h2>
+        </div>
+        <div class="problems-grid">
+          <div class="problem-card reveal">
+            <h3>Unpredictable costs</h3>
+            <p>Per-request, per-minute, per-GB pricing makes it impossible to budget.</p>
+            <div class="problem-visual">
+              AWS Lambda: $0.20/1M requests<br>
+              + $0.0000166667/GB-s<br>
+              + API Gateway: $3.50/1M<br>
+              + NAT Gateway: $0.045/GB<br>
+              <span class="error">= ???/month</span>
+            </div>
+          </div>
+          <div class="problem-card reveal">
+            <h3>Too much setup</h3>
+            <p>Dockerfile, docker-compose, nginx, SSL certs, CI/CD pipelines...</p>
+            <div class="problem-visual">
+              Dockerfile<br>
+              docker-compose.yml<br>
+              nginx.conf<br>
+              .github/workflows/deploy.yml<br>
+              Procfile<br>
+              <span class="warn">+ 2 hours of debugging</span>
+            </div>
+          </div>
+          <div class="problem-card reveal">
+            <h3>Built for web apps, not agents</h3>
+            <p>Traditional platforms timeout on long-running tasks and lose state on restart.</p>
+            <div class="problem-visual">
+              <span class="error">504 Gateway Timeout</span><br>
+              <span class="warn">Warning: state lost on restart</span><br>
+              <span class="error">Error: max execution time exceeded</span><br>
+              <span class="warn">Cold start: 8.2s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Who It's For ===== -->
+    <section class="personas">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Built for builders.</h2>
+        </div>
+        <div class="personas-grid">
+          <div class="persona-card reveal">
+            <h3>Developers</h3>
+            <p>Ship your side project or prototype without spending a weekend on infrastructure. Focus on the agent logic, not the plumbing.</p>
+          </div>
+          <div class="persona-card reveal">
+            <h3>Startups</h3>
+            <p>Get to market faster with a managed platform. No DevOps hire needed. Scale up when you're ready.</p>
+          </div>
+          <div class="persona-card reveal">
+            <h3>Researchers &amp; hackathon teams</h3>
+            <p>Go from notebook to production in minutes. Share a live URL with your team or judges instantly.</p>
+          </div>
+          <div class="persona-card reveal">
+            <h3>Businesses</h3>
+            <p>Run internal agents for support, data pipelines, and automation. Built-in secrets and access control keep things secure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Comparison Table ===== -->
+    <section class="comparison">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Why we're different.</h2>
+        </div>
+        <div style="overflow-x:auto;" class="reveal">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="highlight-col">SafeMode</th>
+                <th>AWS Lambda</th>
+                <th>AWS EC2</th>
+                <th>Railway</th>
+                <th>Heroku</th>
+                <th>Fly.io</th>
+                <th>Render</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly cost</td>
+                <td class="highlight-col">$1/mo flat</td>
+                <td>Variable</td>
+                <td>$15+/mo</td>
+                <td>$5+/mo</td>
+                <td>$7+/mo</td>
+                <td>$3+/mo</td>
+                <td>$7+/mo</td>
+              </tr>
+              <tr>
+                <td>Extra gateway/NAT fees</td>
+                <td class="highlight-col"><span class="check">None</span></td>
+                <td>$3.50/1M + NAT</td>
+                <td>Varies</td>
+                <td>None</td>
+                <td>None</td>
+                <td>None</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td>Setup time</td>
+                <td class="highlight-col">Minutes</td>
+                <td>Hours</td>
+                <td>Hours</td>
+                <td>~30 min</td>
+                <td>~30 min</td>
+                <td>~30 min</td>
+                <td>~30 min</td>
+              </tr>
+              <tr>
+                <td>No cold starts</td>
+                <td class="highlight-col"><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+              </tr>
+              <tr>
+                <td>Stateful containers</td>
+                <td class="highlight-col"><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+              </tr>
+              <tr>
+                <td>Sleep/wake</td>
+                <td class="highlight-col"><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+              </tr>
+              <tr>
+                <td>Agent-first design</td>
+                <td class="highlight-col"><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+                <td><span class="cross">&#10007;</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Loved by developers.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <p>"Deployed my CrewAI agent in under 5 minutes. No Dockerfile, no CI/CD pipeline. Just pushed and it worked."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JC</div>
+              <div>
+                <div class="testimonial-name">Jake Chen</div>
+                <div class="testimonial-role">Full-stack Developer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p>"We switched from a $200/mo EC2 setup to SafeMode. Same agent, $1/month. The sleep/wake feature is brilliant."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SR</div>
+              <div>
+                <div class="testimonial-name">Sarah Rodriguez</div>
+                <div class="testimonial-role">CTO, DataPipe AI</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p>"Finally a platform that understands AI agents aren't web apps. Long-running tasks just work without timeout hacks."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MK</div>
+              <div>
+                <div class="testimonial-name">Michael Kim</div>
+                <div class="testimonial-role">ML Engineer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p>"Used SafeMode for our hackathon project. Went from local notebook to live demo in minutes. Judges were impressed."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AP</div>
+              <div>
+                <div class="testimonial-name">Aisha Patel</div>
+                <div class="testimonial-role">AI Researcher</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p>"The built-in secrets management alone is worth it. No more .env files leaking into repos or plain-text configs."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">DL</div>
+              <div>
+                <div class="testimonial-name">Daniel Lee</div>
+                <div class="testimonial-role">Security Engineer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p>"Running 12 agents on SafeMode now. Each one costs less than a coffee. The pricing model is genuinely fair."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">EW</div>
+              <div>
+                <div class="testimonial-name">Emma Wilson</div>
+                <div class="testimonial-role">Founder, AgentOps</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Blog Preview ===== -->
+    <section class="blog-preview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>From the blog.</h2>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card reveal">
+            <div class="blog-card-tag">Infrastructure</div>
+            <h3>Traditional Hosting Is Broken for AI Agents</h3>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                Mar 11, 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                8 min read
+              </span>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-card-tag">Guides</div>
+            <h3>LangGraph vs CrewAI: Choosing the Right Framework</h3>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                Mar 10, 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                5 min read
+              </span>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-card-tag">Security</div>
+            <h3>Security Best Practices for Production AI Agents</h3>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                Mar 4, 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                6 min read
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Pricing ===== -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Simple, transparent pricing.</h2>
+          <p>Start at $1/month. Scale when you need to.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <h3>Smart Agent</h3>
+            <div class="pricing-amount">
+              <span class="pricing-dollar">$1</span>
+              <span class="pricing-period">/mo per agent</span>
+            </div>
+            <p class="pricing-subtitle">Sleep/wake architecture</p>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Sleep/wake architecture
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                1,000 invocations/month
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Shared gateway
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Community support
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Basic logs
+              </li>
+            </ul>
+            <a href="#" class="pricing-btn">Join waitlist</a>
+          </div>
+
+          <div class="pricing-card popular reveal">
+            <span class="pricing-badge">Popular</span>
+            <h3>Extended</h3>
+            <div class="pricing-amount">
+              <span class="pricing-dollar">$5</span>
+              <span class="pricing-period">/mo per agent</span>
+            </div>
+            <p class="pricing-subtitle">Everything in Smart, plus more</p>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                10,000 invocations/month
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Dedicated gateway
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Webhook triggers
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Priority logs &amp; analytics
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Email support
+              </li>
+            </ul>
+            <a href="#" class="pricing-btn">Join waitlist</a>
+          </div>
+
+          <div class="pricing-card reveal">
+            <h3>Always-On</h3>
+            <div class="pricing-amount">
+              <span class="pricing-dollar">$10</span>
+              <span class="pricing-period">/mo per agent</span>
+            </div>
+            <p class="pricing-subtitle">Everything in Extended, plus more</p>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Unlimited invocations
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Persistent connection
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Priority support
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                Custom domain
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                SLA guarantee
+              </li>
+            </ul>
+            <a href="#" class="pricing-btn">Join waitlist</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Frequently asked questions.</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-question">
+              How does the $1/month pricing work?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Your agent runs in a container that sleeps when idle and wakes on demand (via webhook, cron, or API call). You pay a flat $1/month regardless of how many times it wakes. No per-request fees, no bandwidth charges, no surprise bills.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What frameworks do you support?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                SafeMode supports CrewAI, LangGraph, OpenAI Agents, AutoGen, and any custom Python framework. If it runs in a container, it runs on SafeMode. We provide first-class integrations for popular agent frameworks with optimized build templates.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How is this different from Heroku or Railway?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Traditional PaaS platforms are built for web applications — they timeout on long-running tasks, lose state on restart, and charge per-hour even when idle. SafeMode is built specifically for AI agents with sleep/wake architecture, stateful containers, and flat monthly pricing.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I use my own domain?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Custom domains are available on the Always-On tier ($10/month). All tiers include a free safemode.sh subdomain for your agent (e.g., safemode.sh/your-agent).
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              When will SafeMode be publicly available?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                We're currently in private beta. Join the waitlist and we'll send you an invite as spots open up. Beta users get early access to new features and priority support.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Bottom CTA ===== -->
+    <section class="cta-section">
+      <div class="container reveal">
+        <h2>Ready to deploy your agent?</h2>
+        <p>Join the beta and get your first agent running in under 5 minutes.</p>
+        <a href="#" class="hero-cta">
+          Join Beta
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo">
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="6" fill="#00d4ff"/>
+              <path d="M16 3L9 7V13M16 3L23 7V13M16 7V13M9 13L23 19M23 13L9 19M9 19V25L16 29M23 19V25L16 29M16 19V25" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>safemode</span>
+          </a>
+          <p>Deploy any AI agent for $1/month. Currently in private beta.</p>
+          <a href="mailto:contact@safemode.sh" class="footer-email">contact@safemode.sh</a>
+          <div class="footer-socials">
+            <a href="#" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" aria-label="Discord">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="/pricing/">Pricing</a></li>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/docs/">CLI Reference</a></li>
+            <li><a href="/docs/">API Reference</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Frameworks</h4>
+          <ul>
+            <li><a href="#">CrewAI</a></li>
+            <li><a href="#">LangGraph</a></li>
+            <li><a href="#">OpenClaw</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 SafeMode AI, Inc. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

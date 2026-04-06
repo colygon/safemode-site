@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | SafeMode</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="description" content="Insights on deploying AI agents, framework comparisons, and best practices from the SafeMode team.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300d4ff'/><path d='M16 3L9 7V13M16 3L23 7V13M16 7V13M9 13L23 19M23 13L9 19M9 19V25L16 29M23 19V25L16 29M16 19V25' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="/" class="nav-logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="6" fill="#00d4ff"/>
+            <path d="M16 3L9 7V13M16 3L23 7V13M16 7V13M9 13L23 19M23 13L9 19M9 19V25L16 29M23 19V25L16 29M16 19V25" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>safemode</span>
+        </a>
+        <div class="nav-links">
+          <a href="/#features">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/docs/">Docs</a>
+          <a href="/blog/">Blog</a>
+          <a href="#" class="nav-cta">Join Beta</a>
+        </div>
+        <button class="nav-mobile-toggle" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-narrow blog-page">
+      <!-- Page Header -->
+      <div class="blog-page-header reveal">
+        <h1>Blog</h1>
+        <p>Insights on deploying AI agents, framework guides, and platform updates.</p>
+        <div class="blog-tags">
+          <span class="blog-tag">Infrastructure</span>
+          <span class="blog-tag">Architecture</span>
+          <span class="blog-tag">Tutorials</span>
+          <span class="blog-tag">Security</span>
+          <span class="blog-tag">Guides</span>
+        </div>
+      </div>
+
+      <!-- Featured Post -->
+      <a href="#" class="blog-featured-card reveal">
+        <div class="blog-card-tag">
+          <span>Infrastructure</span>
+          <span class="blog-latest-badge">Latest</span>
+        </div>
+        <h2>Traditional Hosting Is Broken for AI Agents</h2>
+        <p class="excerpt">Why existing cloud platforms fail at running AI agents, and what a purpose-built alternative looks like. From cold starts to unpredictable bills, the problems run deep.</p>
+        <div class="blog-card-meta">
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Mar 11, 2026
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            8 min read
+          </span>
+          <span style="margin-left:auto;font-size:0.8125rem;color:rgba(255,255,255,0.3);display:flex;align-items:center;gap:0.375rem;">
+            Read article
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Blog Grid -->
+      <div class="blog-grid-page">
+        <a href="#" class="blog-grid-card reveal">
+          <div class="blog-card-tag">Guides</div>
+          <h3>LangGraph vs CrewAI: Choosing the Right Agent Framework</h3>
+          <p class="excerpt">A practical comparison of the two most popular agent frameworks. When to use each, performance benchmarks, and deployment considerations.</p>
+          <div class="blog-card-meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Mar 10, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              5 min read
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="blog-grid-card reveal">
+          <div class="blog-card-tag">Security</div>
+          <h3>Security Best Practices for Production AI Agents</h3>
+          <p class="excerpt">How to secure your agent's API keys, manage secrets rotation, and prevent common vulnerabilities in production deployments.</p>
+          <div class="blog-card-meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Mar 4, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              6 min read
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="blog-grid-card reveal">
+          <div class="blog-card-tag">Tutorials</div>
+          <h3>Deploying CrewAI Agents to Production in 5 Minutes</h3>
+          <p class="excerpt">A step-by-step tutorial for deploying your first CrewAI agent with SafeMode. From local development to a live HTTPS endpoint.</p>
+          <div class="blog-card-meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Feb 25, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              4 min read
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="blog-grid-card reveal">
+          <div class="blog-card-tag">Architecture</div>
+          <h3>Why AI Agents Need Sleep/Wake Architecture</h3>
+          <p class="excerpt">The case for sleep/wake over always-on containers. How SafeMode reduces costs by 90% while maintaining instant response times.</p>
+          <div class="blog-card-meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Feb 18, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              5 min read
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="blog-grid-card reveal">
+          <div class="blog-card-tag">Tutorials</div>
+          <h3>Building Event-Driven AI Agents with Webhook Triggers</h3>
+          <p class="excerpt">How to configure webhook triggers for your agents. Connect to Slack, GitHub, Stripe, and any service that sends webhooks.</p>
+          <div class="blog-card-meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Feb 10, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              6 min read
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="blog-grid-card reveal">
+          <div class="blog-card-tag">Architecture</div>
+          <h3>The Real Cost of Running AI Agents (And How to Cut It by 90%)</h3>
+          <p class="excerpt">A breakdown of what it actually costs to run AI agents on AWS, GCP, and traditional platforms versus purpose-built infrastructure.</p>
+          <div class="blog-card-meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Jan 28, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              7 min read
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo">
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="6" fill="#00d4ff"/>
+              <path d="M16 3L9 7V13M16 3L23 7V13M16 7V13M9 13L23 19M23 13L9 19M9 19V25L16 29M23 19V25L16 29M16 19V25" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>safemode</span>
+          </a>
+          <p>Deploy any AI agent for $1/month. Currently in private beta.</p>
+          <a href="mailto:contact@safemode.sh" class="footer-email">contact@safemode.sh</a>
+          <div class="footer-socials">
+            <a href="#" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" aria-label="Discord">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/pricing/">Pricing</a></li>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/docs/">CLI Reference</a></li>
+            <li><a href="/docs/">API Reference</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Frameworks</h4>
+          <ul>
+            <li><a href="#">CrewAI</a></li>
+            <li><a href="#">LangGraph</a></li>
+            <li><a href="#">OpenClaw</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 SafeMode AI, Inc. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
